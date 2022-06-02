@@ -118,4 +118,4 @@ Few improvements can be made to improve functionality of this project:
 
 - This project could take few more parameters for hardware information to get holistic idea of overall performance of system.
 - The password requirement to implement PostgreSQL instance can be managed automatically without entering it every time connecting to PostgreSQL database. 
-- Script can be created to send any host failures of crontab function, which will send output to certain file. It can be useful for admin to look at downsides of servers. 
+- Script can be created to send any host failures of crontab function, which will send output to certain file. It can be useful for admin to look at downside of servers. 
