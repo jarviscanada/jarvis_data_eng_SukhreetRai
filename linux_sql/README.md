@@ -37,7 +37,7 @@ E.  Setting up Crontab to run host_usage.sh automatically after every minute.
 PostgreSQL image is used to establish an instance of database with help of Docker container. The bash file psql_docker.sh is used to create | start | stop the docker container. Now the turn is to create database within docker container. The Bash file ddl.sql comes handy after creation of database, to create tables properly. The bash file host_info.sh collects hardware information of host on which it is operating. The bash file host_usage.sh collects the CPU/memory usage information. The crontab helps to run host_usage.sh script automatically after every minute. 
 
 ## Architecture
-![architecture.drawio](/assets/architecture.drawio.png)
+![architecture.drawio](./assets/architecture.drawio.png)
 
 
  ## Scripts
