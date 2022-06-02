@@ -1,14 +1,18 @@
 #!/bin/sh
 
+#declaring variables 
+
 cmd=$1
 db_username=$2
 db_password=$3
 
+#check if docker is already active if not start it 
   sudo systemctl status docker || sudo systemctl start docker
 
   docker container inspect jrvs-psql
   container_status=$?
 
+#switch to create | start | stop
     case $cmd in 
     create) 
 	    if [ $container_status -eq 0 ];
@@ -23,8 +27,11 @@ db_password=$3
 	    exit 1
 	    fi
 
+#Creating volume for psql instance like hard drive of computer
+
   docker volume create pgdata
   export PGPASSWORD=$db_password
+  #downloading lastest PostgreSQL image 
   docker run --name jrvs-psql -e POSTGRES_PASSWORD=$PGPASSWORD -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 
   exit $?
@@ -42,6 +49,7 @@ db_password=$3
     ;;
 
 	*)
+	#default execution
 	echo 'Illegal command'
 	echo 'Commands: start|stop|create'
 	exit 1
