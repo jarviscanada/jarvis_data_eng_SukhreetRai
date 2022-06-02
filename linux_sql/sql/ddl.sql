@@ -1,3 +1,5 @@
+-- Creating Host_info table 
+
 CREATE TABLE PUBLIC.host_info(
 	id SERIAL NOT NULL PRIMARY KEY,
 	hostname VARCHAR(255) NOT NULL UNIQUE, 
@@ -9,7 +11,7 @@ CREATE TABLE PUBLIC.host_info(
 	total_mem INT NOT NULL, 
 	timestamp TIMESTAMP NOT NULL`);
 
-
+-- Creating Host_usage table
 CREATE TABLE PUBLIC.host_usage(
 	"timestamp" TIMESTAMP NOT NULL,
 	host_id SERIAL NOT NULL REFERENCES PUBLIC.host_info (id),
