@@ -1,0 +1,107 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "$2000 Scholarship",
+        "GPA: 3.6/4.0"
+      ],
+      "degree": "Diploma in Computer system technician software engineering",
+      "department": "Computer Science",
+      "duration": "2019-2021",
+      "school_name": "Sheridan College"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_SukhreetRai",
+  "highlighted_projects": [
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": "",
+      "name": "Machine Learning"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Implemented a monitoring agent that can track the hardware specifications and usage of various nodes and store the collected data into database. The monitoring agent was developed through the use of bash scripts and utilizeed a PostgreSQL databse, provisioned by docker. Bash Scripts were programmed to extract hardware specifications. Crontab was designed to get the periodic updates of the usage data. Testing was done by running sample bash scripts to make sure the output is same as expected.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": "In progress",
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "not started",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "not started",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "not started",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "not started",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "not started",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Sukhreet Rai",
+  "others": [
+    {
+      "bullets": [
+        "Animal lover",
+        "love travelling"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Developed agile methodologies by collaborating with a scrum team to develop and implement numerous projects itilizing technologies such as Linux, PostgreSQL, Docker, and Git",
+      "duration": "2022-present",
+      "title": "Software Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "C language",
+      "C#",
+      "PHP",
+      "TypeScript",
+      "NodeJS"
+    ],
+    "familiar": [
+      "Visual Basic",
+      "JQuery",
+      "Ruby",
+      "C++ language",
+      "XML"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Python",
+      ".NET",
+      "HTML",
+      "JAVASCRIPT",
+      "CSS",
+      "Angular",
+      "Agile/Scrum",
+      "Git"
+    ]
+  },
+  "summary": "I am a graduate student from Sheridan College specializing in Computer system technician software engineering. During my course of studies, I developed apps using many popular programming languages with the help of a recent tech stack. I was able to tutor computer system junior students to help them with projects. I am a dedicated and motivated individual who is currently working with Jarvis to gain and contribute to some industry-level projects on various platforms with the help of different programming languages such as Linux, Java, and Python in an agile work environment. I am a self-starter, team player and multitasker who strives to consistently exceed expectations. I am an analytical thinker and problem solver."
+}
