@@ -31,7 +31,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_SukhreetRa
 
 
 ## Highlighted Projects
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Community Improvement**: This proof-of-concept app was designed as a way to let users quickly and easily flag broken or damaged infrastructure in their community to 311 in Toronto. It made use of geolocation data to simplify the process of communicating where maintenance crews needed to go to fix each issue. This application was built using React Native and Next.js, which was used to access hardware GPS information to provide accurate geolocation data.
 
 
 ## Professional Experiences
