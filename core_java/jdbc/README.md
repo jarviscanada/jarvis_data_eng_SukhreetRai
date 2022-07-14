@@ -3,7 +3,7 @@ This application utilizes the Java Database Connection API to a query a PostgreS
 
 # Implementaiton
 ## ER Diagram
-![image](../assets/ER_diagram.png)
+![image](../assets/ER diagram.png)
 
 ## Design Patterns
 The Data Access Object pattern is used as a Design Pattern in this project. DAO provides an abstraction of data persistence and allows us to separate the actual accessing of information from the "business logic" of the rest of the application. The Repository pattern has a similar goal, but it functions primarily as an abstraction of a collection rather than as an abstraction of the data store and as such is more closely related to the business logic of the application. DAO executes transactions against a given database using CRUD operations. Respository is best if database is highly normalized. Moreover it only focuses on single table access per class. 
