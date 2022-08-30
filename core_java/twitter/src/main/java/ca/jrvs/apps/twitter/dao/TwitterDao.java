@@ -1,21 +1,20 @@
 package ca.jrvs.apps.twitter.dao;
 
-import ca.jrvs.apps.twitter.dao.CrdDao;
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.dao.helper.TwitterUtils;
 import ca.jrvs.apps.twitter.model.Tweet;
-import org.apache.http.HttpResponse;
-import org.apache.http.util.EntityUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import org.apache.http.HttpResponse;
+import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class TwitterDao implements CrdDao<Tweet, String> {
 
-    //URI constants
     private static final String API_BASE_URI = "https://api.twitter.com";
     private static final String POST_PATH = "/1.1/statuses/update.json";
     private static final String SHOW_PATH = "/1.1/statuses/show.json";
@@ -36,12 +35,11 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
     @Override
     public Tweet create(Tweet tweet) {
-        try{
+        try {
             String status = tweet.getText();
             String longitude = String.valueOf(tweet.getCoordinates().getLongitude());
             String latitude = String.valueOf(tweet.getCoordinates().getLatitude());
             String encodedStatus = URLEncoder.encode(status, StandardCharsets.UTF_8.toString());
-
             String uriString =
                     API_BASE_URI + POST_PATH + QUERY_SYMBOL + "status" + EQUAL + encodedStatus + AMPERSAND
                             + "long" + EQUAL
@@ -49,8 +47,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
             HttpResponse response = httpHelper.httpPost(URI.create(uriString));
             return parseResponseBody(response, HTTP_OK);
-        }catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println("Cannot Encode!");
             throw new RuntimeException(e);
         }
@@ -77,21 +74,19 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     public Tweet parseResponseBody(HttpResponse response, int expectedStatusCode) {
         Tweet tweet;
         int status = response.getStatusLine().getStatusCode();
-
         if (status != expectedStatusCode) {
-            try{
+            try {
                 System.out.println(EntityUtils.toString(response.getEntity()));
-            }catch (IOException e){
-                System.out.println("Response has no entity");
+            } catch (IOException e) {
+                System.out.println("Response has no entity!");
             }
             throw new RuntimeException("Unexpected HTTP status:" + status);
         }
 
         String jsonString;
-
-        try{
+        try {
             jsonString = EntityUtils.toString(response.getEntity());
-        }catch (IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException("Failed to convert entity to String", e);
         }
 
@@ -103,4 +98,4 @@ public class TwitterDao implements CrdDao<Tweet, String> {
         return tweet;
     }
 
-    }
+}

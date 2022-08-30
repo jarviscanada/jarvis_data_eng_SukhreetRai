@@ -41,10 +41,6 @@ public class TwitterServiceIntTest {
         assertNotNull(postTweet);
         assertEquals(text, postTweet.getText());
 
-        assertNotNull(postTweet.getCoordinates());
-        assertEquals(lat, postTweet.getCoordinates().getLatitude(), 0.000001);
-        assertEquals(lon, postTweet.getCoordinates().getLongitude(), 0.000001);
-
     }
 
     @Test
@@ -59,11 +55,6 @@ public class TwitterServiceIntTest {
         assertNotNull(showTweet);
         assertEquals(testTweet.getId(), showTweet.getId());
 
-        assertNotNull(testTweet.getCoordinates());
-        assertEquals(testTweet.getCoordinates().getLatitude(), showTweet.getCoordinates().getLatitude(),
-                0.000001);
-        assertEquals(testTweet.getCoordinates().getLongitude(),
-                showTweet.getCoordinates().getLongitude(), 0.000001);
     }
 
     @Test
@@ -81,10 +72,5 @@ public class TwitterServiceIntTest {
         assertNotNull(deleteTweet);
         assertEquals(testTweet.getId(), deleteTweet.getId());
 
-        assertNotNull(testTweet.getCoordinates());
-        assertEquals(testTweet.getCoordinates().getLatitude(),
-                deleteTweet.getCoordinates().getLatitude(), 0.000001);
-        assertEquals(testTweet.getCoordinates().getLongitude(),
-                deleteTweet.getCoordinates().getLongitude(), 0.000001);
     }
 }

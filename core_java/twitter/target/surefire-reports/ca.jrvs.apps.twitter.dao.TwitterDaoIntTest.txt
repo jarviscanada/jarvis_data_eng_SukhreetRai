@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: ca.jrvs.apps.twitter.dao.TwitterDaoIntTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in ca.jrvs.apps.twitter.dao.TwitterDaoIntTest
+create(ca.jrvs.apps.twitter.dao.TwitterDaoIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.create(TwitterDaoIntTest.java:34)
+Caused by: java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.create(TwitterDaoIntTest.java:34)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.create(TwitterDaoIntTest.java:34)
+
+findById(ca.jrvs.apps.twitter.dao.TwitterDaoIntTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.findById(TwitterDaoIntTest.java:50)
+Caused by: java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.findById(TwitterDaoIntTest.java:50)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.findById(TwitterDaoIntTest.java:50)
+
+deleteById(ca.jrvs.apps.twitter.dao.TwitterDaoIntTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.deleteById(TwitterDaoIntTest.java:70)
+Caused by: java.lang.RuntimeException: Failed to execute
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.deleteById(TwitterDaoIntTest.java:70)
+Caused by: oauth.signpost.exception.OAuthExpectationFailedException: consumer key not set
+	at ca.jrvs.apps.twitter.dao.TwitterDaoIntTest.deleteById(TwitterDaoIntTest.java:70)
+
