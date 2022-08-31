@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 The Twitter app allows users to post, lookup, and delete tweets with help of Twitter REST API. The app uses the HTTP client builder to execute post and get requests that will be sent to the Twitter app. The application takes user input via CLI and converts it into HTTP request which is sent to Twitter through API. A DAO was used to manage these requests using a Tweet DTO that transferred the necessary data to and from the HTTP requests/responses from the REST API. This project used Twitter REST API, HTTP Client, maven, Docker, the spring framework, as well as few libraries were used to help manipulate string data and DTO to strings using a JSON parser. The application was tested using JUnit and Mockito to ensure proper functionality and behavior. Finally, the app was packaged using maven into an Uberjar with Springboot implemented to manage all the app's dependencies. The application was deployed using docker. 
 
 [Docker image](https://hub.docker.com/repository/docker/sukhreetrai/twitter)
@@ -24,6 +24,7 @@ post|show|delete [options]
 
 # Design
 ## UML diagram
+![UML Diagram](assets/TwitterUml.png)
 
 - **App/Main**:
 
