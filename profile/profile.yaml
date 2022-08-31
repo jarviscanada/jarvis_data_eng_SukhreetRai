@@ -1,0 +1,133 @@
+# Preferred name (Characters only)
+name: "Sukhreet Rai"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_SukhreetRai
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I am a graduate student from Sheridan College specializing in Computer system technician software engineering. During my course of studies, I developed apps using many popular programming languages with the help of a recent tech stack. I was able to tutor computer system junior students to help them with projects. I am a dedicated and motivated individual who is currently working with Jarvis to gain and contribute to some industry-level projects on various platforms with the help of different programming languages such as Linux, Java, and Python in an agile work environment. I am a self-starter, team player and multitasker who strives to consistently exceed expectations. I am an analytical thinker and problem solver.
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Python
+    - .NET
+    - HTML
+    - JAVASCRIPT
+    - CSS
+    - Angular
+    - Agile/Scrum
+    - Git
+
+  # At least 5 skills
+  competent:
+    - C language
+    - C#
+    - PHP
+    - TypeScript
+    - NodeJS
+
+  # At least 5 skills
+  familiar:
+    - Visual Basic
+    - JQuery
+    - Ruby
+    - C++ language
+    - XML
+
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Implemented a monitoring agent that can track the hardware specifications and usage of various nodes and store the collected data into database. The monitoring agent was developed through the use of bash scripts and utilizeed a PostgreSQL databse, provisioned by docker. Bash Scripts were programmed to extract hardware specifications. Crontab was designed to get the periodic updates of the usage data. Testing was done by running sample bash scripts to make sure the output is same as expected. 
+
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+        "In progress"
+
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: "not started"
+
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: "not started"
+
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: "not started"
+
+  - name: "Spark"
+    git_url: "/spark"
+    description: "not started"
+
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: "not started"
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+#  - name: "Web app for resturant"
+    #URL is optional
+#    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+#    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+  - name: "Community Improvement"
+    description: "This proof-of-concept app was designed as a way to let users quickly and easily flag broken or damaged infrastructure in their community to 311 in Toronto. It made use of geolocation data to simplify the process of communicating where maintenance crews needed to go to fix each issue. This application was built using React Native and Next.js, which was used to access hardware GPS information to provide accurate geolocation data."
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2022-present"
+    # The projectdescription must start with an action verb (https://bit.ly/3guO98u)
+    description: "Developed agile methodologies by collaborating with a scrum team to develop and implement numerous projects itilizing technologies such as Linux, PostgreSQL, Docker, and Git"
+#  - title: "Tutor"
+#    company: "XYZ Company"
+#    duration: "2019"
+#    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+
+#List of edcuation
+education: 
+  - school_name: "Sheridan College"
+    duration: "2019-2021"
+    degree: "Diploma in Computer system technician software engineering"
+    department: "Computer Science"
+    # optional
+    awards_achievements: 
+      - "$2000 Scholarship"
+      - "GPA: 3.6/4.0"
+#  - school_name: "XYZ university"
+#    duration: "2016-2018"
+#    degree: "Master of Engineering"
+#    department: "Electrical and Computer Engineering"
+#    awards_achievements: 
+
+#Optional section
+others:
+    #category
+#  - title: "Certificates"
+    #list of items
+#    bullets:
+#      - "Udacity Machine Learning (2019)"
+#  - title: "Awards"
+#    bullets:
+#      - "Winner"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Animal lover"
+      - "love travelling"
