@@ -24,7 +24,7 @@ post|show|delete [options]
 
 # Design
 ## UML diagram
-![UML Diagram](assets/TwitterUml.png)
+![UML Diagram](../assets/TwitterUml.png)
 
 - **App/Main**:
 
