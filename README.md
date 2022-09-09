@@ -8,7 +8,7 @@ I am a graduate of Computer software engineering from Sheridan College. I develo
 
 **Competent:** C, C#, PHP, TypeScript, NodeJS
 
-**Familiar:** Visual Basic, JQuery, Ruby, C++, XML
+**Familiar:** Visual Basic, JQuery, Ruby, C++, XML, Microsoft Azure, AUTOSYS. 
 
 ## Jarvis Projects
 
